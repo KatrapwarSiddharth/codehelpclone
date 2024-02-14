@@ -1,0 +1,1699 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container .header{
+    width: 100vw;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0px;
+
+
+    /* because of this the nav bar doesn't collide with cards */
+    z-index: 2;
+}
+
+#navContents{
+    display: flex;
+    font-size: 1.7rem;
+    align-items: center;
+    list-style-type: none;
+    gap: 35px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+#navContents a:hover{
+    color: rgb(83, 101, 236);
+}
+
+#navContents a{
+    text-decoration:none;
+    color: black;
+}
+
+.nav-buttons button{
+    width: 170px;
+    height: 45px;
+    border-radius: 6px;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+#button1{
+    border: 1px solid blue;
+    background: white;
+    color: blue;
+    font-size: large;
+    cursor:pointer;
+}
+
+#button2{
+    border: 1px solid rgb(83, 101, 236);
+    background: rgb(83, 101, 236);
+    color: white;
+    font-size: large;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button2 img{
+    width: 35px;
+    height: 25px;
+}
+
+#DarkMode{
+    width: 50px;
+    height: 50px;
+}
+
+#CodeHelp{
+    margin-left: 20px;
+    height: 80px;
+    cursor:pointer;
+}
+
+#dropdown {
+    display: inline-block;
+    position: relative;
+    /* background-color: white; */
+}
+
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    width: 400%;
+    overflow: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+#dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* #dropdown-content a:hover {
+    color: white;
+    /* background-color: #00A4BD; */
+/* }  */
+
+
+#topbox span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#topbox p{
+    font-size: 1.1rem;
+}
+
+#bottombox span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#bottombox p{
+    font-size: 1.1rem;
+}
+
+
+/* Middle */
+
+.middle{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(93deg, white 0%, #bfafde48 100%);
+}
+
+.middle .sticker{
+    width: 210px;
+    height: 50px;
+    background-color: rgb(83, 101, 236);
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    position: sticky;
+    align-self: flex-end;
+    margin-right: 40px;
+    /* position: sticky;
+    top: 100px; */
+}
+
+.middle .lastcontent{
+    width: 1503px;
+    height:650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lastcontent #info h1{
+    font-size: 4rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.lastcontent #info p{
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    color: grey;
+    text-align: center;
+}
+
+#socials{
+    display: flex;
+    width: 806px;
+    justify-content: space-between;
+}
+
+#socials img{
+    width: 74px;
+    height: 70px;
+    border-radius: 33px;
+}
+
+#socials p a{
+    text-decoration:none;
+    font-size: 1.7rem;
+}
+
+#socials #first{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    /* color: red; */
+}
+
+#socials #first a{
+    color: red;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+#socials #second{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    color: blue;
+}
+
+#socials #second a{
+    color: rgb(35, 129, 216);
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+#socials #third{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+#socials #third a{
+    color: rgb(14, 14, 218);
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+#socials #fourth{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+#socials #fourth a{
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Footer */
+.footer{
+    width: 100vw;
+    height: 450px;
+    /* background-color: rgba(53, 122, 234, 0.672); */
+    background-color: rgb(83, 101, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .upper {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    width: 1500px;
+}
+
+.footer .upper .left{
+    display: flex;
+    width: 1000px;
+    /* align-items: end; */
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    
+}
+
+.footer .bottom{
+    height: 30px;
+    margin: 30px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+#insideleft img{
+    width: 250px;
+    height: 120px;
+}
+
+#insideleft p{
+    font-size: 1.1rem;
+    
+}
+
+#insidemiddle{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+#insidemiddle li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+#insidemiddle li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .upper .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+#insideright{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#insideright li{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+#insideright li a{
+    text-decoration: none;
+    color: white;
+}
+
+.right p a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FIRST CONTENT - TOP */
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle .firstcontent{
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    background-image: linear-gradient(93deg, white 0%, #bfafde48 100%);
+    display: flex;
+    padding: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.middle .left{
+    width: 700px;
+}
+
+.left #textcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    display: inline-block   ;
+}
+
+.middle .firstcontent .left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left #textcontent h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 5rem;
+}
+
+.left #textcontent #fontcolor{
+    color: rgb(83, 101, 236);
+}
+
+/* animations */
+
+.left #textcontent p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.7rem;
+    color: rgb(40, 36, 36);
+}
+
+.middle .firstcontent .right img{
+    width: 720px;
+    height: 580px;
+    filter: drop-shadow(1px 2px 6px black);
+}
+
+#buttons #b1{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(83, 101, 236);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 6px;
+    border: 1px solid rgb(83, 101, 236);
+    font-size: 1.1rem;
+}
+
+#buttons #b2{
+    width: 200px;
+    height: 60px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 6px;
+    border: 1px solid rgb(83, 101, 236);
+    font-size: 1.1rem;
+}
+
+#buttons{
+    display: flex;
+    gap: 20px;
+}
+
+#Students{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+
+/* Second Content */
+
+.secondcontent{
+    display: flex;
+    width: 100vw;
+    height: 270px;
+    background: rgb(83, 101, 236);
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding: 100px;
+}
+
+.secondcontent #youtube h1{
+    font-size: 3.5rem;
+}
+.secondcontent #youtube p{
+    font-size: 1.3rem;
+}
+.secondcontent #youtube a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.secondcontent #twitter h1{
+    font-size: 3.5rem;
+}
+.secondcontent #twitter p{
+    font-size: 1.3rem;
+}
+.secondcontent #twitter a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.secondcontent #instagram h1{
+    font-size: 3.5rem;
+}
+.secondcontent #instagram p{
+    font-size: 1.3rem;
+}
+.secondcontent #instagram a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.secondcontent #linkedin h1{
+    font-size: 3.5rem;
+}
+.secondcontent #linkedin p{
+    font-size: 1.3rem;
+}
+.secondcontent #linkedin a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.secondcontent #youtube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcontent #twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcontent #instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcontent #linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalline{
+    border-right: 1px solid white;
+    height: 150px;
+}
+
+
+
+/* third Content */
+
+.thirdcontent{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.thirdcontent #textcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdcontent #textcontent span{
+    align-self: center;
+    color: rgb(83, 101, 236);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.thirdcontent #textcontent p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Cards */
+
+#cards{
+    width: 100vw;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    /* position: relative; */
+}
+
+#cards .uppercards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#cards .uppercards #firstcard1{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(1, 162, 142, 0.39);
+    
+
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+#cards .uppercards #firstcard1:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+#firstcard1 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(1, 162, 142, 0.39);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppercards #firstcard1 img{
+    width: 45px;
+    height: 40px;
+}
+
+.uppercards #firstcard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#firstcard1 h1{
+    font-size: 1.2rem;
+}
+#firstcard1 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/* ------------------------ */
+#cards .uppercards #secondcard2{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(229, 48, 62, 0.39);
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+#cards .uppercards #secondcard2:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+
+#secondcard2 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(229, 48, 62, 0.39);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppercards #secondcard2 img{
+    width: 60px;
+    height: 60px;
+}
+
+.uppercards #secondcard2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+#secondcard2 h1{
+    font-size: 1.2rem;
+}
+#secondcard2 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ------------------- */
+
+#cards .uppercards #thirdcard3{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(55, 19, 253, 0.39);
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+
+#cards .uppercards #thirdcard3:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+.uppercards #thirdcard3 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(55, 19, 253, 0.39);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppercards #thirdcard3 img{
+    width: 35px;
+    height: 40px;
+}
+
+.uppercards #thirdcard3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#thirdcard3 h1{
+    font-size: 1.2rem;
+}
+#thirdcard3 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/* ---------------- bottom cards---------- */
+#cards .bottomcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#cards .bottomcards #firstcard4{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(19, 120, 175, 0.39);;
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+#cards .bottomcards #firstcard4:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+
+#firstcard4 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(19, 120, 175, 0.39);;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomcards #firstcard4 img{
+    width: 40px;
+    height: 35px;
+}
+
+.bottomcards #firstcard4{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#firstcard4 h1{
+    font-size: 1.2rem;
+}
+#firstcard4 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/* ------------------------ */
+#cards .bottomcards #secondcard5{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(26, 158, 253, 0.39);;
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+#cards .bottomcards #secondcard5:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+
+#secondcard5 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(26, 158, 253, 0.39);;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomcards #secondcard5 img{
+    width: 50px;
+    height: 50px;
+}
+
+.bottomcards #secondcard5{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+#secondcard5 h1{
+    font-size: 1.2rem;
+}
+#secondcard5 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ------------------- */
+
+#cards .bottomcards #thirdcard6{
+    width: 380px;
+    height: 344px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgba(249, 113, 21, 0.39);
+
+    /* transition */
+    transition: all 0.2s linear;
+}
+
+#cards .bottomcards #thirdcard6:hover{
+    
+    /* transition */
+
+    transform: scale(1.07);
+}
+
+
+#thirdcard6 #imagebox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(249, 113, 21, 0.39);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomcards #thirdcard6 img{
+    width: 40px;
+    height: 40px;
+}
+
+.bottomcards #thirdcard6{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#thirdcard6 h1{
+    font-size: 1.2rem;
+}
+#thirdcard6 span{
+    color: rgb(108, 105, 105);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+
+/* Meet Your Instructor */
+.meetinstructor{
+    width: 100vw;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetinstructor .topcontent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.meetinstructor .topcontent p{
+    font-family: 'Rubik', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.meetinstructor .topcontent span{
+    color: rgb(83, 101, 236);
+}
+
+.meetinstructor .topcontent button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(83, 101, 236);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 6px;
+    border: 1px solid rgb(83, 101, 236);
+    font-size: 1.1rem;
+}
+
+.meetinstructor #borderbottom{
+    width: 1840px;
+    border-bottom: 2px solid black;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+
+.meetinstructor .middlecontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+
+.meetinstructor .middlecontent img{
+    width: 256px;
+    height: 269px;
+    border-radius: 1000px;
+    margin-bottom: 20px;
+}
+
+.meetinstructor .middlecontent p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.meetinstructor .middlecontent span{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    color: rgb(108, 106, 106);
+}
+
+
+.meetinstructor .bottomcontent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.meetinstructor .bottomcontent img{
+    width: 170px;
+    height: 90px;
+}
+
+.meetinstructor .bottomcontent p{
+    font-family: 'Rubik', serif;
+    font-size: 1.4rem;
+    color: rgb(108, 106, 106);
+}
+
+.meetinstructor .bottomcontent #amazon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meetinstructor .bottomcontent #microsoft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meetinstructor .bottomcontent #google{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Placements */
+
+.placements{
+    width: 100vw;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.placements .leftcontent{
+    font-family: 'Rubik', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.placements .leftcontent h1{
+    color: rgb(83, 101, 236);
+    font-size: 1.6rem;
+} 
+
+.placements .leftcontent p{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.placements .leftcontent span{
+    font-size: 1.4rem;
+    color: rgb(108, 106, 106);
+} 
+
+
+.placements .rightcontent .outercircle{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(196, 106, 196, 0.318);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.placements .rightcontent .innercircle{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    animation: rotate 50s infinite linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.placements .rightcontent .innercircle #upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.placements .rightcontent .innercircle #bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.placements .rightcontent .innercircle #rotate1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(-360deg); }
+}
+
+.placements .rightcontent .innercircle #rotate2 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.placements .rightcontent .innercircle #rotate3 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.placements .rightcontent .innercircle #rotate4 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.placements .rightcontent .bigcircle{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.141);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.placements .rightcontent .bigcircle img{
+    width: 38px;
+    height: 40px;
+    
+}
+
+
+/* learnvideos */
+
+.learnvideos{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-top: 70px;
+    gap: 40px;
+    background-color: rgba(212, 210, 210, 0.121);
+}
+
+.learnvideos h1{
+    font-family: 'Rubik', serif;
+    font-size: 3.3rem;
+}
+
+.learnvideos h1 span{
+    color: rgb(83, 101, 236);
+}
+
+.learnvideos #card{
+    width: 400px;
+    height: 390px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 20px;
+}
+
+.learnvideos #card #upper img{
+    border-radius: 7px;
+    width: 358px;
+    height: 201px;
+}
+
+.learnvideos #card #middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgb(169, 167, 167);
+}
+
+.learnvideos #card #middle p{
+    font-family: 'Rubik', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.learnvideos #card #bottom{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    gap: 13px;
+}
+
+.learnvideos #card #bottom{
+    font-family: 'Rubik', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.learnvideos #card #bottom p{
+    color: rgb(83, 101, 236);
+}
+
+.learnvideos #card #bottom #price{
+    color: grey;
+}
+
+.learnvideos #card #bottom #discount{
+    background-color: rgb(29 209 161);
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+/* recorded courses */
+
+.recordedcourses{
+    width: 100vw;
+    height: 650px;
+    background-color: rgba(212, 210, 210, 0.121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recordedcourses #border{
+    border: 0.5px solid rgb(133, 130, 130);
+    width: 1740px;
+    margin-bottom: 60px;
+}
+
+.recordedcourses h1{
+    font-family:'Rubik', serif;
+    font-size: 3.3rem;
+}
+
+.recordedcourses h1 span{
+    color: rgb(83, 101, 236);
+}
+
+.recordedcourses #cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 170px;
+}
+
+.recordedcourses #cards #leftcard{
+    width: 400px;
+    height: 390px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 20px;
+}
+
+.recordedcourses #cards #rightcard{
+    width: 400px;
+    height: 390px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 20px;
+}
+
+
+.recordedcourses #cards #leftcard #upper img{
+    border-radius: 7px;
+    width: 358px;
+    height: 201px;
+}
+
+
+.recordedcourses #cards #leftcard #middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgb(169, 167, 167);
+}
+
+.recordedcourses #cards #leftcard #middle p{
+    font-family: 'Rubik', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.recordedcourses #cards #leftcard #bottom{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    gap: 13px;
+}
+
+.recordedcourses #cards #leftcard #bottom{
+    font-family: 'Rubik', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.recordedcourses #cards #leftcard #bottom p{
+    color: rgb(83, 101, 236);
+}
+
+.recordedcourses #cards #leftcard #bottom #price{
+    color: grey;
+}
+
+.recordedcourses #cards #leftcard #bottom #discount{
+    background-color: rgb(29 209 161);
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+/* --------------- */
+.recordedcourses #cards #rightcard #upper img{
+    border-radius: 7px;
+    width: 358px;
+    height: 201px;
+}
+
+
+.recordedcourses #cards #rightcard #middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgb(169, 167, 167);
+}
+
+.recordedcourses #cards #rightcard #middle p{
+    font-family: 'Rubik', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.recordedcourses #cards #rightcard #bottom{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    gap: 13px;
+}
+
+.recordedcourses #cards #rightcard #bottom{
+    font-family: 'Rubik', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.recordedcourses #cards #rightcard #bottom p{
+    color: rgb(83, 101, 236);
+}
+
+.recordedcourses #cards #rightcard #bottom #price{
+    color: grey;
+}
+
+.recordedcourses #cards #rightcard #bottom #discount{
+    background-color: rgb(29 209 161);
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* reviews */
+
+.reviews{
+    width: 100vw;
+    height: 600px;
+    /* background-image: linear-gradient(292deg, white 0%, #bfafde48 100%); */
+    background-color: rgba(212, 210, 210, 0.121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.reviews .uppercontent{
+    display: flex;
+    flex-direction: row;
+    gap: 1200px;
+    /* justify-content: space-between; */
+}
+
+.reviews .uppercontent #leftcontent h1{
+    font-family: 'Rubik', serif;
+    font-size: 1.4rem;
+    color: rgb(83, 101, 236);
+}
+
+.reviews .uppercontent #leftcontent p{
+    font-family: 'Rubik', serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.reviews .uppercontent #rightcontent button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.reviews .uppercontent #rightcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.reviews .uppercontent #rightcontent #b2 {
+    background-color: rgb(83, 101, 236);
+    color: white;
+}
+
+
+
+/* -------------------- */
+
+.reviews .bottomcontent #card1 {
+    width: 456px;
+    height: 302px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 12px;
+}   
+
+.reviews .bottomcontent #card1 #bottom img{
+    width: 54px;
+    height: 54px;
+    border-radius: 40px;
+} 
+
+.reviews .bottomcontent #card1 #bottom .leftcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviews .bottomcontent #card1 #bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.reviews .bottomcontent #card1 #upper p{
+    font-family: 'Rubik', serif;
+    color: grey;
+    
+} 
+
+.reviews .bottomcontent #card1 .names{
+    font-family: 'Rubik', serif;
+} 
+
+.reviews .bottomcontent #card1 .names h1{
+    font-size: 0.9rem;
+} 
+
+.reviews .bottomcontent #card1 .names p{
+    color: grey;
+} 
+
+.reviews .bottomcontent #card1 #bottom .checked {
+    color: orange;
+}
+
+
+/* ---------------- */
+
+.reviews .bottomcontent #card2 {
+    width: 456px;
+    height: 302px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 12px;
+}   
+
+.reviews .bottomcontent #card2 #bottom img{
+    width: 54px;
+    height: 54px;
+    border-radius: 40px;
+} 
+
+.reviews .bottomcontent #card2 #bottom .leftcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviews .bottomcontent #card2 #bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.reviews .bottomcontent #card2 #upper p{
+    font-family: 'Rubik', serif;
+    color: grey;
+    
+} 
+
+.reviews .bottomcontent #card2 .names{
+    font-family: 'Rubik', serif;
+} 
+
+.reviews .bottomcontent #card2 .names h1{
+    font-size: 0.9rem;
+} 
+
+.reviews .bottomcontent #card2 .names p{
+    color: grey;
+} 
+
+
+.reviews .bottomcontent #card2 #bottom .checked {
+    color: orange;
+}
+
+/* ---------------- */
+
+.reviews .bottomcontent{
+    display: flex;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+
+/* -------------------- */
+
+
+.reviews .bottomcontent #card3 {
+    width: 456px;
+    height: 302px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 12px;
+}   
+
+.reviews .bottomcontent #card3 #bottom img{
+    width: 54px;
+    height: 54px;
+    border-radius: 40px;
+} 
+
+.reviews .bottomcontent #card3 #bottom .leftcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviews .bottomcontent #card3 #bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.reviews .bottomcontent #card3 #upper p{
+    font-family: 'Rubik', serif;
+    color: grey;
+    
+} 
+
+.reviews .bottomcontent #card3 .names{
+    font-family: 'Rubik', serif;
+} 
+
+.reviews .bottomcontent #card3 .names h1{
+    font-size: 0.9rem;
+} 
+
+.reviews .bottomcontent #card3 .names p{
+    color: grey;
+} 
+
+
+.reviews .bottomcontent #card3 #bottom .checked {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
